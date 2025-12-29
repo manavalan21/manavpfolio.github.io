@@ -1,107 +1,80 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manavalan | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-body {
-    background: #f4f6f8;
-    color: #333;
-}
+<nav>
+    <h2 class="logo">Manavalan</h2>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    background: #111;
-}
+<section class="hero">
+    <!-- Profile Image -->
+    <img src="profile.jpg" alt="Profile Image" class="profile-img">
 
-nav .logo {
-    color: #fff;
-}
+    <h1>Hi, I'm <span>Manavalan</span></h1>
+    <p>Python Developer | Machine Learning Beginner</p>
+    <a href="#projects" class="btn">View Project</a>
+</section>
 
-nav ul {
-    list-style: none;
-    display: flex;
-}
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate Python developer with basic to intermediate knowledge in Python.
+        I am interested in machine learning and computer vision and enjoy building real-world
+        mini projects to improve my skills.
+    </p>
+</section>
 
-nav ul li {
-    margin-left: 20px;
-}
+<section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <span>Python</span>
+        <span>OpenCV</span>
+        <span>NumPy</span>
+        <span>Machine Learning Basics</span>
+        <span>Git & GitHub</span>
+        <span>Problem Solving</span>
+    </div>
+</section>
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
+<section id="projects" class="section">
+    <h2>Project</h2>
+    <div class="project-card">
+        <h3>Face Mask Detection System</h3>
+        <p>
+            A mini project developed using Python, OpenCV, and machine learning techniques
+            to detect whether a person is wearing a face mask or not in real-time using
+            webcam or images.
+        </p>
+        <ul>
+            <li>Real-time face detection</li>
+            <li>Mask / No-Mask classification</li>
+            <li>OpenCV image processing</li>
+        </ul>
+        <a href="YOUR_PROJECT_LINK" target="_blank">View Project</a>
+    </div>
+</section>
 
-.hero {
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to right, #000, #333);
-    color: #fff;
-    text-align: center;
-}
+<section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: yourmail@example.com</p>
+    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+</section>
 
-.hero span {
-    color: #00c6ff;
-}
+<footer>
+    <p>© 2025 Manavalan | Portfolio</p>
+</footer>
 
-.btn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: #00c6ff;
-    color: #000;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.section {
-    padding: 50px 80px;
-}
-
-.section h2 {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-
-.skills-container span {
-    background: #fff;
-    padding: 10px 20px;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.project-card {
-    background: #fff;
-    padding: 25px;
-    max-width: 600px;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-}
-
-.project-card a {
-    display: inline-block;
-    margin-top: 15px;
-    color: #00c6ff;
-    text-decoration: none;
-}
-
-footer {
-    background: #111;
-    color: #fff;
-    text-align: center;
-    padding: 15px;
-}
+</body>
+</html>
